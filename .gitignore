@@ -75,3 +75,9 @@ sysinfo.txt
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+# Ignoring GR3D package since it's propietary. 
+# If your project launches with compile errors, 
+# close it, add the package to the packages 
+# directory in the root folder of unity and 
+# then try launching the project again
+Packages/com.mechdyne.getreal3d-4.3.0.4063.tgz
