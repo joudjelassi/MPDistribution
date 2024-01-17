@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1268050992877243359}
-  - component: {fileID: 6323926895507881134}
   m_Layer: 0
   m_Name: PT_Pine_Tree_03_dead
   m_TagString: Untagged
@@ -35,33 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!205 &6323926895507881134
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1932841404346126693}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.032800674, y: 3.9897761, z: 0.01949501}
-  m_Size: 9.0348425
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.25
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 728806381982184805}
-  - screenRelativeHeight: 0.125
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 7058119992877278399}
-  - screenRelativeHeight: 0.01
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 4328895901199877293}
-  m_Enabled: 1
 --- !u!1 &3362487869812425040
 GameObject:
   m_ObjectHideFlags: 0
