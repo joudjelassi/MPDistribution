@@ -16,6 +16,7 @@ MonoBehaviour:
   m_logLevel: 2
   m_rpcLogLevel: -1
   m_ignoredErrors:
+  - build_target
   - splashScreen
   m_config: editor_config
   m_inputSystemController: 1
