@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: fc025655beccc3448951b44e075d4cc0
+timeCreated: 1493856689
+licenseType: Store
+ShaderImporter:
+  defaultTextures:
+  - _CompactMap: {fileID: 2800000, guid: c7e013adb6189194aa0c436aaed5f9f7, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
