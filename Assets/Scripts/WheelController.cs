@@ -14,7 +14,8 @@ public class WheelController : MonoBehaviour
     [SerializeField] Transform backRightTransform;
     [SerializeField] Transform backLeftTransform;
 
-    public float acceleration = 500f;
+    public float targetSpeed = 300f;
+    public float acceleration = 1000f;
     public float breakingForce = 300f;
     public float maxTurnAngle = 15f;
 
@@ -24,29 +25,19 @@ public class WheelController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Get forward/reverse acceleration from the vertical axis 
-        //currentAcceleration = acceleration * Input.GetAxis("Vertical");
 
-        // If we're pressing space, give currentBreakingForce a value 
-        //if (Input.GetKey(KeyCode.Space))
-        //currentBreakForce = breakingForce;
-        //else
-        //currentBreakForce = 0f;
+        //Calculate current speed
+        float currentSpeed = frontRight.rpm * (2 * Mathf.PI * frontRight.radius) / 60;
 
-        float fixedAcceleration = acceleration;
+        // Adjust acceleration based on the difference between current and target speed
+        currentAcceleration = currentSpeed < targetSpeed? acceleration: 0f;
 
-        //Apply acceleration to front wheels
+        // Apply acceleration to front wheels
         frontRight.motorTorque = currentAcceleration;
         frontLeft.motorTorque = currentAcceleration;
 
-        // Apply breaking force to all wheels 
-        frontRight.brakeTorque = currentBreakForce;
-        frontLeft.brakeTorque = currentBreakForce;
-        backRight.brakeTorque = currentBreakForce;
-        backLeft.brakeTorque = currentBreakForce;
-
-        // Take care of the steering 
-        currentTurnAngle = maxTurnAngle * Input.GetAxis("Horizontal");
+        // Take care of the steering (keep it straight)
+        currentTurnAngle = 0f;
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
 
