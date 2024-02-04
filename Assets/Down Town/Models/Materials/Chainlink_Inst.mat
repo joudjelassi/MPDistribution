@@ -13,9 +13,10 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
   - _ALPHATEST_ON
+  - _EMISSION
   - _NORMALMAP
   m_InvalidKeywords: []
-  m_LightmapFlags: 5
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2450
@@ -93,7 +94,9 @@ Material:
     - _DetailedNormalUV: 1
     - _DstBlend: 0
     - _EmissivePower: 0
+    - _GlossMapScale: 1
     - _Glossiness: 0.495
+    - _GlossyReflections: 1
     - _MaskClipValue: 0.5
     - _Metalic: 1
     - _Metallic: 0.225
@@ -102,6 +105,8 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Roughtness: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _VertexColoring: 0.3
