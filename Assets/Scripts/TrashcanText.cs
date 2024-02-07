@@ -15,6 +15,7 @@ public class TrashcanText : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Debug.Log("AAAAAAAAAAAAAAAA");
             UiObject.SetActive(true);
         }
     }
@@ -23,7 +24,7 @@ public class TrashcanText : MonoBehaviour
     {
         
     }
-    void OnnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         UiObject?.SetActive(false);
         Destroy(cube);
