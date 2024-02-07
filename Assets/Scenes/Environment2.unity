@@ -5085,7 +5085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b4874681cc1154fa9a3975f86dc713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UiObject: {fileID: 0}
+  UiObject: {fileID: 6618420}
   cube: {fileID: 115632367}
 --- !u!65 &115632369
 BoxCollider:
